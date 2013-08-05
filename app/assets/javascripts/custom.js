@@ -78,8 +78,7 @@ Eventbrite({'app_key': "NVYMGRMALY3AXXSCUU"}, function(eb){
     // Options are listed here: http://developer.eventbrite.com/doc/organizers/organizer_list_events/
    
      var options = {
-        'city'  : evt_city
-       
+        'city'  : evt_city       
         ,'categories' : evt_categories
         ,'date' : evt_date
     };
