@@ -1,0 +1,86 @@
+a:hover{
+    text-decoration:  none;
+}
+
+.navbar-inner {
+    background-color: #242424;
+    background-image: none;
+    border: 0;
+}
+
+.hero {
+    background-color: #000;
+    position: relative;
+}
+
+.hero .calltoaction {
+    position: absolute;
+    left: 23%;
+    top: 17%;
+    text-align: center;
+    width: 57%;
+    color: #333;
+}
+
+.hero .calltoaction h2.heading {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.search_bar{
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #eee;
+    border-left: none;
+    border-right: none;
+    text-transform: uppercase;
+    background: #fafafa;
+    margin-top: 10px;
+
+}
+
+ .results{
+    margin-top: 20px;
+ }
+.thumbnails{
+
+}
+ .tag{
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    overflow: hidden;
+    white-space: nowrap;
+ }
+
+ .block{
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 1px rgba(0,0,0,0.075);
+    -moz-box-shadow: 0px 2px 1px rgba(0,0,0,0.075);
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.075);
+    margin-bottom: 20px;
+ }
+
+ .event_data_cl{
+
+ }
+ .event_data_cl h4{
+    height:80px;
+    overflow: hidden;
+
+ }
+ .event_logo_cl{
+    height: 172px;
+ }
+
+ .event_logo_cl img{
+    height: 100%;
+ }
+.ev_info{
+    height:60px;
+}

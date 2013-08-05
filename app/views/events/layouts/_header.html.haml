@@ -1,0 +1,88 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container
+      %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => "", :title => ""}
+        = image_tag "logo.png"
+        -#%img{:src => "img/logo.png"}/
+      .nav-collapse.collapse
+        %ul.nav
+      / /.nav-collapse
+.hero.hidden-phone
+  .container
+    .row
+      .span12
+        = image_tag "hero.png", :alt=>"1-1"
+        -#%img{:alt => "1-1", :src => "img/hero.png"}/
+        .calltoaction
+          %h2.heading If it's out there we'll find it
+          .description
+            The way to discover and book interesting real events
+.container
+  .row-fluid
+    %form.form-inline.search_bar
+      Going
+      %input.input-small{:placeholder => "From", :type => "text", :id => "from_dt_evt", :onclick => "$(this).datepicker({ format: 'yyyy-mm-dd'})"}/
+      %input.input-small{:placeholder => "To", :type => "text", :id => "to_dt_evt", :onclick => "$(this).datepicker({ format: 'yyyy-mm-dd'})"}/
+      In:
+      %input{:placeholder => "Enter city name...", :type => "text", :id=>"evt_city"}/
+      Interested in:
+      %input{:placeholder => "lecture, meetups...", :type => "text", :id=>"evt_categories"}/
+      %span.btn{:type => "submit", :id => "evt_submit"} Search
+      %span.pull-right
+        %button.btn.btn-success{:type => "button"}
+          %i.icon-map-marker
+          Search by your place now
+  %div.event_list
+    =link_to "Loading Events...","http://eventbrite.com/org/561037966"
+  .row-fluid.results
+    .container-fluid
+      %ul.thumbnails
+        %li.span3
+          %a.thumbnail{:href => "eventpage.html"}
+          .tag
+            = image_tag "facebooktag.png"
+            -#%img{:src => "img/facebooktag.png"}/
+          = image_tag "1.jpeg"
+          -#%img{:src => "img/1.jpeg"}/
+          %h4 Event name
+          %p Event info
+          %p
+            %i.icon-calendar>
+            date of the event
+          %p
+            %i.icon-map-marker>
+            location
+        %li.span3
+          %a.thumbnail{:href => "#"}
+          .tag
+            = image_tag "eventbritetag.png"
+            -#%img{:src => "img/eventbritetag.png"}/
+          = image_tag "1.jpeg"
+          -#%img{:src => "img/1.jpeg"}/
+          %h4 Event name
+          %p Event info
+          %p
+            %i.icon-calendar>
+            date of the event
+          %p
+            %i.icon-map-marker>
+            location
+        %li.span3
+          %a.thumbnail{:href => "#"}
+          .tag
+            = image_tag "meetuptag.png"
+            -#%img{:src => "img/meetuptag.png"}/
+          = image_tag "1.jpeg"
+          -#%img{:src => "img/1.jpeg"}/
+          %h4 Event name
+          %p Event info
+          %p
+            %i.icon-calendar>
+            date of the event
+          %p
+            %i.icon-map-marker>
+            location
